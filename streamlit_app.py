@@ -16,6 +16,24 @@ elif menu == "Latihan Soal ✏️":
 
 elif menu == "Catatan Kuliah 📒":
     st.title("📒 Catatan Kuliah")
+
+materi_titles = {
+    "Kimia Fisika 🔬": {
+        1: "Gas Ideal dan Gas Nyata",
+        2: "Hukum Thermodinamika"
+    },
+    "Spektrofotometri 🧪": {
+        1: "Spektrofotometri Infrared",
+        2: "Flame Photometry",
+        3: "ICP AES"
+    },
+    "Biokimia 🧬": {
+        1: "Karbohidrat",
+        2: "Protein",
+        3: "Enzim"
+    }
+}
+
         # Dropdown Mata Kuliah
     matkul_options = list(materi_titles.keys())
     selected_matkul = st.selectbox("Pilih Mata Kuliah", matkul_options, key="matkul_dropdown_simple")
