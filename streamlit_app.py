@@ -15,6 +15,8 @@ elif menu == "Latihan Soal ✏️":
     st.title("✏️ Latihan Soal")
 
 # Catatan Kuliah
+if menu == "Catatan Kuliah 📒":
+    st.title("📒 Catatan Kuliah")
 materi_titles = {
     "Kimia Fisika 🔬": {
         1: "Gas Ideal dan Gas Nyata",
@@ -31,9 +33,6 @@ materi_titles = {
         3: "Enzim"
     }
 }
-
-if menu == "Catatan Kuliah 📒":
-    st.title("📒 Catatan Kuliah")
     
     # Inisialisasi session_state jika belum ada
     if "selected_matkul_simple" not in st.session_state:
