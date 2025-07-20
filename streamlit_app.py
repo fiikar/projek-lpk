@@ -32,7 +32,7 @@ materi_titles = {
     }
 }
 
-elif menu == "Catatan Kuliah 📒":
+if menu == "Catatan Kuliah 📒":
     st.title("📒 Catatan Kuliah")
     
     # Inisialisasi session_state jika belum ada
