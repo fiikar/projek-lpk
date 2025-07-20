@@ -33,7 +33,11 @@ materi_titles = {
         3: "Enzim"
     }
 }
-
+ # Inisialisasi session_state jika belum ada
+    if "selected_matkul_simple" not in st.session_state:
+        st.session_state.selected_matkul_simple = None
+    if "selected_pertemuan_simple" not in st.session_state:
+        st.session_state.selected_pertemuan_simple = None
         # Dropdown Mata Kuliah
     matkul_options = list(materi_titles.keys())
     selected_matkul = st.selectbox("Pilih Mata Kuliah", matkul_options, key="matkul_dropdown_simple")
